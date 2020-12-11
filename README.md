@@ -25,3 +25,5 @@ $ npm run build:win32
 $ npm run build:win64
 
 ```
+
+### 개발 시에는 npm run dev(react), npm run electron-dev(electron) 모두 실행해야 한다.

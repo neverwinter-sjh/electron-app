@@ -21,6 +21,10 @@ const App = () => {
     setInput(e.target.value);
   };
 
+  const setTodos = () => {
+    console.log('todo 입력');
+  };
+
   return (
     <div className="app">
       <h1>Electron React App</h1>
@@ -45,6 +49,7 @@ const App = () => {
       </ul>
       <hr />
       <h2>https://jsonplaceholder.typicode.com/todos</h2>
+      <p>(3초 로딩 시간을 줌)</p>
       {data.length === 0 && <p>Loading...</p>}
       {data.map(item => (
         <div key={item.id}>{item.title}</div>

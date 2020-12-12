@@ -4,13 +4,14 @@
   "description": "",
   "main": "main.js",
   "scripts": {
-    "dev": "webpack --mode development --watch",
+    "app-dev": "webpack --mode development --watch",
     "electron-dev": "electron .",
+    "app-build": "webpack",
     "build": "electron-builder build",
-    "build:osx": "npm run build --mac",
-    "build:win32": "npm run build --win --ia32",
-    "build:win64": "npm run build --win --x64",
-    "build:win": "npm run build:win32 && npm run build:win64"
+    "build:osx": "webpack && npm run build --mac",
+    "build:win32": "webpack && npm run build --win --ia32",
+    "build:win64": "webpack && npm run build --win --x64",
+    "build:win": "webpack && npm run build:win32 && npm run build:win64"
   },
   "author": "",
   "license": "ISC",

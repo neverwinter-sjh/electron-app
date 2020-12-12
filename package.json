@@ -66,6 +66,7 @@
   },
   "dependencies": {
     "axios": "^0.21.0",
-    "electron-store": "^6.0.1"
+    "electron-store": "^6.0.1",
+    "lodash": "^4.17.20"
   }
 }

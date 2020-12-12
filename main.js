@@ -13,7 +13,7 @@ function createWindow() {
   win.loadFile('./build/index.html');
 
   // dev tool 열기
-  win.webContents.openDevTools();
+  // win.webContents.openDevTools();
 }
 
 app.whenReady().then(createWindow);
